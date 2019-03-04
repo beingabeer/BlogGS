@@ -1,2 +1,3 @@
 environment.yaml
 *.pyc
+__pycache__/
