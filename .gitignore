@@ -1,5 +1,8 @@
-environment.yaml
 *.pyc
 __pycache__/
 __init__.py
 *.jpg
+settings.py
+db.sqlite3
+/static
+.DS_Store
