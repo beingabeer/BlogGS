@@ -22,9 +22,11 @@ class PostListView(ListView):
     template_name = 'blog/home.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
-
+    paginate_by = 3
 
 # naming convention -> app/model_viewtype.html  ->  blog/post_detail.html
+
+
 class PostDetailView(DetailView):
     model = Post
 
@@ -41,6 +43,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
     fields = ['title', 'content']
+    success_url = '/'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
