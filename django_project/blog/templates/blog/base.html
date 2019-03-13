@@ -9,19 +9,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="shortcut icon" href="{% static 'blog/python_logo.png' %}"/>
+
     <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
 
     {% if title %}
-        <title>Blog - {{ title }}</title>
+        <title>BlogGS - {{ title }}</title>
     {% else %}
-        <title>Blog</title>
+        <title>BlogGS</title>
     {% endif %}
 </head>
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Blog</a>
+          <a class="navbar-brand mr-4" style="font-weight:bold;color:white;" href="{% url 'blog-home' %}">BlogGS</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,7 +62,7 @@
         </div>
         <div class="col-md-4">
           <div class="content-section">
-            <h4>Podcasts I Listen To</h4>
+            <h5 style="font-weight:bold;">Podcasts I Listen To</h5>
                 <a href="https://www.startalkradio.net/" target="_blank"><li class="list-group-item list-group-item">Star Talk Radio</li></a>
                 <a href="http://www.se-radio.net/" target="_blank"><li class="list-group-item list-group-item">Software Engineering Radio</li></a>
                 <a href="https://samharris.org/podcast/" target="_blank"><li class="list-group-item list-group-item">Waking Up with Sam Harris</li></a>
