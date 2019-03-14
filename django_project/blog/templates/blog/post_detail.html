@@ -14,7 +14,7 @@
       <h2 class="article-title"> {{ object.title }}</h2>
       <p class="article-content">{{ object.content }}</p>
       {% if object.image %}
-        <img class="img-fluid img-thumbnail" style="max-width: 550px" src="{{ object.image.url }}">
+        <a href="{{ object.image.url }}" target="_blank"><img class="img-fluid img-thumbnail" style="max-width: 550px" src="{{ object.image.url }}"></a>
       {% endif %}
     </div>
   </article>
