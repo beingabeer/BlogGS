@@ -69,15 +69,15 @@
           {% block content %}{% endblock %}
         </div>
         <div class="col-md-4">
-          <div class="content-section">
-            <h5 style="font-weight:bold;">Podcasts I Listen To</h5>
-                <a href="https://www.startalkradio.net/" target="_blank"><li class="list-group-item">Star Talk Radio</li></a>
-                <a href="http://www.se-radio.net/" target="_blank"><li class="list-group-item">Software Engineering Radio</li></a>
-                <a href="https://samharris.org/podcast/" target="_blank"><li class="list-group-item">Waking Up with Sam Harris</li></a>
-                <a href="https://talkpython.fm/" target="_blank"><li class="list-group-item">Talk Python To Me</li></a>
-                <a href="https://www.wnycstudios.org/shows/radiolab" target="_blank"><li class="list-group-item">RadioLabs</li></a>
-              </ul>
-            </p>
+          <div class="content-section" style="background: #686868">
+            <h5 style="font-weight:bold;color: white;">Search for blogs</h5>
+                <input type="text" placeholder="Search.." style="padding: 6px;">
+          </div>
+          <div class="content-section" style="background: #000000">
+            <h5 style="font-weight:bold;color: white">Subscribe to Future Posts</h5>
+            <input type="text" placeholder="First Name.." style="padding: 6px;margin-bottom: 10px;">
+            <input type="text" placeholder="Email Address.." style="padding: 6px;margin-bottom: 10px;">
+            <a class="btn btn-danger btn-lg" href="#">Subscribe</a>
           </div>
           {% if is_paginated %}
             {% if page_obj.has_previous %}
@@ -99,9 +99,7 @@
     </main>
 
 
-    <div class="footer">
 
-    </div>
 
 
     <!-- Optional JavaScript -->
