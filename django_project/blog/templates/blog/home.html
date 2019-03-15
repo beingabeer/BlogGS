@@ -10,9 +10,9 @@
             </div>
             <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
-            {% if post.image %}
-              <a href="{{ post.image.url }}" target="_blank"><img class="img-fluid img-thumbnail" style="max-width: 550px" src="{{ post.image.url }}"></a>
-            {% endif %}
+              {% if post.image %}
+                <a href="{{ post.image.url }}" target="_blank"><img class="img-fluid img-thumbnail" src="{{ post.image.url }}"></a>
+              {% endif %}
           </div>
         </article>
     {% endfor %}

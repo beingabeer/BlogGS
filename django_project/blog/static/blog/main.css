@@ -32,11 +32,22 @@ ul {
 .content-section {
   background: #ffffff;
   padding: 10px 20px;
+  border: 10px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-right: 100px;
+}
+
+.content-section-about {
+  background: #ffffff;
+  padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+
 
 .article-title {
   color: #444444;

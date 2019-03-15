@@ -69,15 +69,15 @@
           {% block content %}{% endblock %}
         </div>
         <div class="col-md-4">
-          <div class="content-section" style="background: #686868">
+          <div class="content-section-about" style="background: #686868">
             <h5 style="font-weight:bold;color: white;">Search the website</h5>
-                <input type="text" placeholder="Search.." style="padding: 6px;">
+                <input class="form-control" type="text" placeholder="Search..">
           </div>
-          <div class="content-section" style="background: #000000">
+          <div class="content-section-about" style="background: #000000">
             <h5 style="font-weight:bold;color: white">Subscribe to Future Posts</h5>
-            <input type="text" placeholder="First Name.." style="padding: 6px;margin-bottom: 10px;">
-            <input type="text" placeholder="Email Address.." style="padding: 6px;margin-bottom: 10px;">
-            <a class="btn btn-danger btn-sm" href="#" style="margin-top: 10px">Subscribe</a>
+            <input class="form-control" type="text" placeholder="First Name..">
+            <input class="form-control mt-2" type="text" placeholder="Email Address..">
+            <a class="btn btn-danger btn-sm mt-2" href="#">Subscribe</a>
           </div>
           {% if is_paginated %}
             {% if page_obj.has_previous %}
