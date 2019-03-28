@@ -1,4 +1,4 @@
-# BlogGS
+## Overview
 A Blogging Application built in Django
 ***
 ### Demo Link
