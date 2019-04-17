@@ -14,7 +14,7 @@ To get started, create an acount. Then click on the 'New Post' button to create 
 ## Update Post
 Users have the ability to update or delete their own posts.
 
-![](https://raw.githubusercontent.com/beingabeer/BlogGS/master/django_project/update.png)
+![](https://raw.githubusercontent.com/beingabeer/BlogGS/master/django_project/updatepost.png)
 
 ## Update Profile Info
 Users also have the ability to update their profile information.
